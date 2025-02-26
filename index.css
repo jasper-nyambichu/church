@@ -12,13 +12,7 @@ body::before
     transition: all 0.3s ease;
     font-size: 20px;
 }
-[class*=btn]
-{
-    background-color: rgb(2, 255, 255);
-    border-radius: 15px;
-    width: px;
-    height:px;
-}
+
 
 
 .btn:hover
@@ -38,11 +32,11 @@ body::before
     animation-play-state: running;
 }
 
-@keyframes spin {
+/* @keyframes spin {
     from {
         transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
-    }
+    } */
