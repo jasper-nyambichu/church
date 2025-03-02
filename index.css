@@ -1,28 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* :root
+{
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --bg-light:#f2f2fc;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
+} */
 body::before
 {
     display: block;
     content: '';
     height: 60px;
 }
-#card-a:hover
-{
-    background-color: orange;
-    cursor: pointer;
+.card-card {
+    padding: 30px 15px;
+}
+
+[class*="fa"] {
     transition: all 0.3s ease;
-    font-size: 20px;
+    font-size: 40px;
+    color: hsl(240, 44%, 53%);
+    line-height:60px;
+    transition: all 0.3s ease;
+}
+[class*=card-card]{
+    background:var(--bg-light) ;
+    /* border: 1px solid var(--bg-black-50); */
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+[class*=card-card]:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 
-
-.btn:hover
-{
-    background-color:rgb(56, 124, 124);
+.btn:hover {
+    background-color: rgb(56, 124, 124);
     /* transition: all 0.3s ease;
     transform: rotateX(45deg) rotateY(100deg); */
 }
-.pic
-{
+.pic {
+
+    height: auto;
     /* background-color: blue; */
     animation: spin 4s linear infinite;
     animation-play-state: paused;
