@@ -4,12 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Replica Layout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
         }
         .hero-section {
-            background: url('pexels-photo-220660.jpeg') no-repeat center center/cover;
+            background: url('picha 1 (1).jpg') no-repeat center center/cover;
             height: 500px;
             color: white;
             display: flex;
@@ -39,7 +42,7 @@
             padding: 20px;
         }
         .testimonials {
-            background: url('pexels-photo-267559.webp') no-repeat center center/cover;
+            background: url('picha 1 (6).jpg') no-repeat center center/cover;
             color: white;
             padding: 80px 0;
             text-align: center;
@@ -57,31 +60,100 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+        .features-section {
+            background-color: #f8f9fa;
+            color: #212529;
+            padding: 60px 0;
+        }
+        .feature-box {
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .feature-box h3 {
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 1100px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #f8f9fa;
+            color: #000;
+            font-size: 24px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: transform 0.3s, background-color 0.3s, color 0.3s;
+        }
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            background-color: #007bff;
+            color: #fff;
+        }
+         /* Background lightness adjustment */
+       .content-section {
+           background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+           background-size: cover;
+           background-position: center;
+           border-radius: 10px;
+           max-width: fit-content;
+           padding: 20px; /* Adding padding for better spacing */
+       }
+
+       /* Ensure icons maintain spacing and visibility */
+       .social-icons {
+           margin-top: 20px;
+           display: flex;
+           justify-content: center;
+       }
+       /* Adding hover effect to icons */
+       .social-icons a:hover {
+           transform: scale(1.1);
+           background-color: #007bff; /* Change background on hover */
+           color: #fff; /* Change text color on hover */
+       }
     </style>
 </head>
 <body>
     
     <!-- NavBar start -->
-	<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top ">
-		<div class="container">
-			<img src="ea1d220a280be38853d3b8d056d7b89d.png " width="7%" class="img-fluid ">
-			<a href="#" class="navbar-brand">MAILI MBILI SDA CHURCH</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navmenu">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="prayers.html" class="nav-link">Services</a></li>
-					<li class="nav-item"><a href="Sermons.html" class="nav-link">Sermons</a></li>
-					<li class="nav-item"><a href="Stream.html" class="nav-link">Live Streaming</a></li>
-					<li class="nav-item"><a href="Prayers.html" class="nav-link">Prayers</a></li>
-					<li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<!-- NavBar End -->
+		<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="ea1d220a280be38853d3b8d056d7b89d.png" class="img-fluid" style="max-height: 50px; width: auto;">
+                    <span class="ms-2 fw-bold">MAILI MBILI SDA CHURCH</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="maombi.html" class="nav-link">Kuomba</a></li>
+                        <li class="nav-item"><a href="Sermons.html" class="nav-link">Sermons</a></li>
+                        <li class="nav-item"><a href="Stream.html" class="nav-link">Live Streaming</a></li>
+                        <li class="nav-item"><a href="Contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <!-- NavBar End -->
 
     <!-- Hero Section -->
     <header class="hero-section">
@@ -92,14 +164,29 @@
     </header>
 
     <!-- About Section -->
-    <div class="container content-section">
+    <div data-aos="flip-right" class="container-xxl content-section">
         <div class="row align-items-center">
-            <div class="col-md-6">
-                <h2>About Us</h2>
-                <p>Some content about your services or company.</p>
+            <div data-aos="slide-right" class="col-12 col-lg-6 bg-light p-4 rounded-3 shadow-sm">
+                <h3 class="text-start mb-3 fw-bold text-primary">
+                    Welcome To Maili Mbili SDA Church
+                </h3>
+                <p class="text-start text-secondary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloremque, repudiandae officia impedit amet dolorem aliquam 
+                    eum officiis alias deleniti quibusdam dolor quia qui libero fugiat 
+                    distinctio perspiciatis nostrum sed aliquid excepturi accusantium quod provident. 
+                    Quibusdam architecto, reprehenderit, consectetur exercitationem tempora, repellat 
+                    id cupiditate consequatur sequi qu. Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam est
+                     qui veritatis nesciunt soluta distinctio, laboriosam nobis? Alias fugit, ducimus 
+                     suscipit recusandae eveniet molestias veritatis. Quisquam enim, aliquid ad amet 
+                     debitis consequatur! Esse quidem sint, ratione vitae tempora rem, qui dolore 
+                     explicabo error eos omnis.
+                </p>
+                <button class="btn btn-success">Click Me</button>
             </div>
             <div class="col-md-6">
-                <img src="WhatsApp Image 2024-12-08 at 21.27.42_116f7c68.jpg" class="img-fluid" alt="About Image">
+                <img src="picha 1 (2).png" class="img-fluid" alt="About Image">
             </div>
         </div>
     </div>
@@ -107,18 +194,24 @@
     <!-- Features Section -->
     <div class="features-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 feature-box">
-                    <h3>Feature 1</h3>
-                    <p>Short description of the feature.</p>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Feature 1</h3>
+                        <p>Short description of the feature.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 feature-box">
-                    <h3>Feature 2</h3>
-                    <p>Short description of the feature.</p>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Feature 2</h3>
+                        <p>Short description of the feature.</p>
+                    </div>
                 </div>
-                <div class="col-md-4 feature-box">
-                    <h3>Feature 3</h3>
-                    <p>Short description of the feature.</p>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h3>Feature 3</h3>
+                        <p>Short description of the feature.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,11 +227,17 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="container content-section">
+    <div class="container-xxl content-section p-5">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 box-shadow p-4">
                 <h2>Contact Us</h2>
                 <p>Feel free to reach out to us anytime.</p>
+                <div class="social-icons mt-5 d-flex flex-nowrap gap-3">
+                    <a href="#" class="bi bi-facebook"></a>
+                    <a href="#" class="bi bi-twitter-x"></a>
+                    <a href="#" class="bi bi-instagram"></a>
+                    <a href="#" class="bi bi-whatsapp"></a>
+                </div>
             </div>
             <div class="col-md-6">
                 <form>
@@ -168,5 +267,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init({
+		duration: 2000,
+		once:false
+	    });
+	  </script>
 </body>
 </html>
